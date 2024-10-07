@@ -1,0 +1,23 @@
+textarea {  
+    display: inline-block;
+    height: 200px;  
+    font-size: 16px;  
+}  
+  
+.line-numbers {  
+    vertical-align: top;
+    border-right: 1px solid #ccc; 
+    padding-right: 10px;  
+    color: #999;  
+    display: inline-block;
+    user-select: none; /* Prevent text selection in line numbers */  
+    pointer-events: none; /* Prevent interactions (clicks, etc.) in line numbers */  
+}  
+  
+.line-number {  
+    counter-increment: line;  
+    content: counter(line);  
+    display: block;  
+    line-height: 1.5; /* Match the line height of the textarea */  
+    margin-top: -1px; /* Compensate for the border-bottom of the previous line number */  
+}  
